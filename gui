@@ -1,1 +1,9 @@
-loadstring(game:HttpGet('https://pastebin.com/raw/3JufRzE5'))()
+local success, err = pcall(function()
+    -- Attempt to load and execute the Pastebin script
+    loadstring(game:HttpGet('https://pastebin.com/raw/3JufRzE5'))()
+end)
+
+-- Check if there was an error and print it
+if not success then
+    warn("Failed to load the Pastebin script: " .. err)
+end
