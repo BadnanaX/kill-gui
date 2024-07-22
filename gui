@@ -1405,7 +1405,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/0xtD2DsP",true))()
 local solTab = Window:CreateTab("Sol's RNG ", nil)
 local solSection = solTab:CreateSection("Main")
 
-local Button = prisonTab:CreateButton({
+local Button = solTab:CreateButton({
    Name = "Erudite Hub",
    Callback = function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/ThacG/EruditeHub/main/Sol's%20RNG/V1.69"))()
