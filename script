@@ -3575,9 +3575,6 @@ function library:Init(key)
     end
     return TabLibrary
 end
-return library
-
-
 -- ScrollingFrame for Tabs
 local TabFrame = Instance.new("ScrollingFrame")
 TabFrame.Name = "TabFrame"
@@ -3607,3 +3604,14 @@ local function AddTab(name)
     -- Update ScrollingFrame CanvasSize
     TabFrame.CanvasSize = UDim2.new(0, 0, 0, TabCount * TabHeight)
 end
+
+-- Example: Adding Tabs
+AddTab("Home")
+AddTab("Settings")
+AddTab("About")
+AddTab("Profile")
+AddTab("Log")
+-- Add as many as you want!
+
+return library
+
